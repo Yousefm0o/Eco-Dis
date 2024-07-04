@@ -1,0 +1,50 @@
+<nav>
+  <div class="wrapper">
+    <div class="logo">
+      <div class="img">
+        <img src="../../../assets/logo.svg" alt="">
+      </div>
+    </div>
+    <div class="links">
+      <ul>
+        <li>Home</li>
+        <li [ngClass]="{'open': employeesMenu}" (click)="openEmployees($event)">Employees<span class="arrow"></span>
+          <div class="drop-menu">
+            <ul>
+              <li>Profile Creation</li>
+              <li>Job Search</li>
+              <li>Community and Support</li>
+              <li>Resources</li>
+            </ul>
+          </div>
+        </li>
+        <li [ngClass]="{'open': employersMenu}" (click)="openEmployers($event)">Employers<span class="arrow"></span>
+          <div class="drop-menu">
+            <ul>
+              <li>Employer Profiles</li>
+              <li>Job Posting</li>
+              <li>Resources for Employers</li>
+              <li>Networking</li>
+            </ul>
+          </div>
+        </li>
+        <li [ngClass]="{'open': coursesMenu}" (click)="openCourses($event)">Courses<span class="arrow"></span>
+          <div class="drop-menu">
+            <ul>
+              <li>Skill Development</li>
+              <li>Accessibility Courses</li>
+              <li>Certifications</li>
+              <li>Tutoring and Mentorship</li>
+            </ul>
+          </div>
+        </li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="sign">
+      <button>Sing in</button>
+      <span>Or</span>
+      <button>Sing up</button>
+    </div>
+  </div>
+</nav>
