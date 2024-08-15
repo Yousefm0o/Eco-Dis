@@ -2,13 +2,14 @@
   <div class="wrapper">
     <div class="logo">
       <div class="img">
-        <img src="../../../assets/logo.svg" alt="">
+        <img src="../../../assets/Pics/logo.svg" alt="">
       </div>
     </div>
     <div class="links">
       <ul>
         <li>Home</li>
-        <li [ngClass]="{'open': employeesMenu}" (click)="openEmployees($event)">Employees<span class="arrow"></span>
+        <li [ngClass]="{'open': employeesMenu}" clickOutside (clickOutside)="closeMenu()">
+          <span class="link" (click)="openEmployees($event)">Employees<span class="arrow"></span></span>
           <div class="drop-menu">
             <ul>
               <li>Profile Creation</li>
@@ -18,7 +19,8 @@
             </ul>
           </div>
         </li>
-        <li [ngClass]="{'open': employersMenu}" (click)="openEmployers($event)">Employers<span class="arrow"></span>
+        <li [ngClass]="{'open': employersMenu}" clickOutside (clickOutside)="closeMenu()">
+          <span class="link" (click)="openEmployers($event)">Employers<span class="arrow"></span></span>
           <div class="drop-menu">
             <ul>
               <li>Employer Profiles</li>
@@ -28,7 +30,8 @@
             </ul>
           </div>
         </li>
-        <li [ngClass]="{'open': coursesMenu}" (click)="openCourses($event)">Courses<span class="arrow"></span>
+        <li [ngClass]="{'open': coursesMenu}" clickOutside (clickOutside)="closeMenu()">
+          <span class="link" (click)="openCourses($event)">Courses<span class="arrow"></span></span>
           <div class="drop-menu">
             <ul>
               <li>Skill Development</li>

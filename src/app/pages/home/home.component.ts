@@ -35,6 +35,4 @@ export class HomeComponent {
     'New Valley'
   ];
   selectedGovernorate = 'Cairo';
-
-
 }

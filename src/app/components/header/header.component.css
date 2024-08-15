@@ -9,6 +9,7 @@ nav {
   margin: 0px auto;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #999;
 }
 
 button:hover {
@@ -17,6 +18,14 @@ button:hover {
 
 .logo {
   flex-basis: 20%;
+}
+
+.logo .img {
+  overflow: hidden;
+}
+
+.logo .img img {
+  min-height: 100px;
 }
 
 .links {
@@ -54,7 +63,6 @@ button:hover {
 
 .links > ul > li {
   margin: 0px;
-  padding: 0px 10px;
   font-size: 20px;
   height: 100%;
   align-self: center;
@@ -65,6 +73,14 @@ button:hover {
   border-radius: 8px 8px 0px 0px;
   cursor: pointer;
   position: relative;
+}
+
+.links > ul > li .link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0px 10px;
+  align-content: center;
 }
 
 .links > ul > li.open::after {
@@ -80,7 +96,7 @@ button:hover {
 }
 
 .links ul li:hover {
-  background-color: #ffffff2f;
+  background-color: #ffffff20;
 }
 
 .links > ul > li::before {
@@ -111,37 +127,32 @@ button:hover {
 }
 
 .drop-menu {
+  padding: 0px;
   max-height: 0px;
   width: 250px;
   background-color: #fff;
   position: absolute;
-  top: 95px;
+  top: 101px;
   transition: .4s;
   overflow: hidden;
 }
 
+.drop-menu ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.drop-menu ul li {
+  margin: 0px;
+}
+
 li.open .drop-menu {
-  background-color: #fff;
   max-height: 350px;
 }
 
-
-/* li.open .drop-menu::before {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%) rotate(45deg);
-  background-color: red;
-} */
-
 .drop-menu ul {
-  padding: 10px;
   list-style-type: none;
-  /* text-align: center; */
-
+  background-color: #f5f5f5;
 }
 
 .drop-menu ul li {
@@ -152,7 +163,7 @@ li.open .drop-menu {
 }
 
 .drop-menu ul li:hover {
-  background-color: #0075ea2e;
+  background-color: #399cff3d;
 }
 
 .sign button {
@@ -167,12 +178,10 @@ li.open .drop-menu {
 }
 
 .sign button:nth-of-type(1) {
-  /* background-color: #336ea8; */
   background-color: #0076ea;
 }
 
 .sign button:nth-of-type(2) {
-  /* background-color: #c1272d; */
   background-color: #ff0612;
 }
 

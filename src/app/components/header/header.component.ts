@@ -34,5 +34,10 @@ export class HeaderComponent {
     this.coursesMenu = !this.coursesMenu;
   }
 
+  closeMenu() {
+    this.employeesMenu = false;
+    this.employersMenu = false
+    this.coursesMenu = false;
+  }
 
 }
